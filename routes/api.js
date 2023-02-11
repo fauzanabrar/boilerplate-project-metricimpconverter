@@ -13,8 +13,6 @@ module.exports = function (app) {
     let initNum = convertHandler.getNum(input)
     let initUnit = convertHandler.getUnit(input)
 
-    console.log(initNum);
-
     if( convertHandler.allUnit.includes(initUnit)){
       if(isNaN(initNum) && initNum != '' || initNum == null){
         return res.send('invalid number')

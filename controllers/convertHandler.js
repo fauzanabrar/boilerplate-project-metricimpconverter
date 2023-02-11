@@ -28,9 +28,12 @@ function ConvertHandler() {
     if(!result){
       return null
     }
+    
     if(result[0] == 'l'){
       result[0] = 'L'
     }
+    if(!this.allUnit.includes(result[0])) return null
+
     return result[0];
   };
   
